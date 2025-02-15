@@ -1,0 +1,140 @@
+html {
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    padding: 2em 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Typography */
+
+h1, h2{
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+ol li::marker {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+strong {
+    color: hsl(30, 10%, 34%);
+}
+
+li::marker {
+    font-size: .7rem;
+}
+
+.color-h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+.brown {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+/* Layout */
+.container {
+    margin: 0 auto;
+    width: 43%;
+    max-width: 800px;
+    background-color: hsl(0 0% 100%);
+    font-size: 1rem;
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    font-size: 1rem;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.preparation h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+    margin: 0 0 0.5em 0;
+}
+
+.preparation ul {
+    font-size: .9rem;
+}
+
+.preparation ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.margin-bottom {
+    margin-bottom: .8em;
+}
+
+.ingredients-list li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+/* Table */
+.rows {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10em;
+    padding-left: 2em;
+}
+
+.border-bottom {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+/* Images */
+
+.omelette {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: hsl(0 0% 100%);
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .inner-cont {
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .rows {
+        padding-right: 5em;
+        padding-left: 1em;
+    }
+
+    .omelette {
+        border-radius: 0;
+    }
+}
